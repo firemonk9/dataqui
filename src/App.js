@@ -1,26 +1,22 @@
+import Navbar from './components/Navbar';
 import React from 'react';
-import {Button} from 'antd';
-import './App.css';
+import { Layout } from 'antd';
+const { Content, Footer } = Layout;
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Button type='primary'>Button</Button>
-	<p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component {
+
+    render() {
+        return (
+            <Layout className="layout">
+                <Navbar />
+                <Content style={{ padding: '10px 0px' }}>
+                    <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div>
+                </Content>
+                <Footer style={{ textAlign: 'center' }}>DataQ</Footer>
+            </Layout>
+        );
+    }
 }
 
 export default App;
