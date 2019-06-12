@@ -1,7 +1,7 @@
 ## If you are running the project for the first time, install dependencies by running `npm install` after you download NodeJS
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run::
 
 ### `npm start`
 
