@@ -51,5 +51,8 @@ nav {
   align-items: center;
   list-style: none;
 }
+.selected {
+  background-color: red;
+}
 
 

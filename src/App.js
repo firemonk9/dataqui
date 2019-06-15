@@ -7,17 +7,20 @@ import Flows from './containers/Flows/Flows.container';
 import Users from './containers/Users/Users.container';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
-
+import {withRouter} from 'react-router-dom';
 const { Content, Footer } = Layout;
+
+const SomeComponent = withRouter(props => <App {...props}/>);
 
 
 class App extends React.Component {
 
     render() {
+        debugger
         return (
             <Router>
                 <Layout className="layout">
-                    <Navbar />
+                    <Navbar {...this.props}/>
                     <Content style={{ padding: '0 50px', marginTop: 64 }}>
 
                     <Route path='/' exact component={Dashboard} />

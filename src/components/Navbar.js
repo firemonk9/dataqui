@@ -1,17 +1,16 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Layout, Menu } from 'antd';
-const { Header } = Layout;
+import { NavLink } from 'react-router-dom';
 
 class Navbar extends Component {
     render() {
+        debugger
         return(
                 <nav>
                     <ul className={'nav-links'}>
-                        <Link to={'/dashboard'}><li key="1">Dashboard</li></Link>
-                        <Link to={'/flows'}><li key="2">Flows</li></Link>
-                        <Link to={'/executions'}><li key="3">Executions</li></Link>
-                        <Link to={'/users'}><li key="4">Users</li></Link>
+                        <NavLink activeClassName="selected" to={'/dashboard'}><li key="1">Dashboard</li></NavLink>
+                        <NavLink activeClassName="selected" to={'/flows'}><li key="2">Flows</li></NavLink>
+                        <NavLink activeClassName="selected" to={'/executions'}><li key="3">Executions</li></NavLink>
+                        <NavLink activeClassName="selected" to={'/users'}><li key="4">Users</li></NavLink>
                     </ul>
                 </nav>
         )
