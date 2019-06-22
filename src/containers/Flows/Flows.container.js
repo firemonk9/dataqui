@@ -1,6 +1,7 @@
 import HTML5Backend from 'react-dnd-html5-backend';
 import { DragDropContext } from 'react-dnd';
 import ComponentToolKit from '../../components/componentToolKit/ComponentToolKit';
+import WorkArea from '../../components/WorkArea/WorkArea';
 import React from 'react';
 import { Layout } from 'antd';
 const { Content, Sider } = Layout;
@@ -16,7 +17,9 @@ class Flows extends React.Component {
                         <Sider width={400} style={{ background: '#fff', border: '1px solid black' }}>
                             <ComponentToolKit />
                         </Sider>
-                        <Content style={{ padding: '0 24px', minHeight: 280, border: '1px solid black' }}>Drop Area</Content>
+                        <Content style={{ padding: '0 24px', minHeight: 280, border: '1px solid black' }}>
+                            <WorkArea />
+                        </Content>
                     </Layout>
                 </Content>
             </Layout>
