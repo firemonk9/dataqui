@@ -1,5 +1,24 @@
 nav {
-  display: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 64px;
+  background-color: black;
+  color: white;
 }
 
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 0;
+}
 
+.selected {
+  background-color: #024655;
+  padding: 25px;
+  transition: ease 200ms;
+  height: 65px ;
+}

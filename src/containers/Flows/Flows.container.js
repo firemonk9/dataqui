@@ -12,12 +12,12 @@ class Flows extends React.Component {
 
         return (
             <Layout>
-                <Content style={{ padding: '0 10px', minHeight: '800px' }}>
-                    <Layout style={{ padding: '24px 0', background: '#fff' }}>
-                        <Sider width={400} style={{ background: '#fff', border: '1px solid black' }}>
+                <Content className={'flows-container'}>
+                    <Layout className={'flows-layout'}>
+                        <Sider className={'toolkit-sider'} width={400}>
                             <ComponentToolKit />
                         </Sider>
-                        <Content style={{ padding: '0 24px', minHeight: 280, border: '1px solid black' }}>
+                        <Content className={'workarea-content-wrapper'}>
                             <WorkArea />
                         </Content>
                     </Layout>

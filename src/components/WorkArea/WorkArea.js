@@ -2,6 +2,7 @@ import React from 'react';
 import {DropTarget} from "react-dnd";
 
 function collect(connect, monitor) {
+    // const item = monitor.getItem()
     return {
         connectDropTarget: connect.dropTarget(),
         hovered: monitor.isOver(),
@@ -12,8 +13,8 @@ function collect(connect, monitor) {
 class WorkArea extends React.Component {
     render() {
         const { connectDropTarget, hovered, item } = this.props;
-        return connectDropTarget(<div>Work Area</div>)
+        return connectDropTarget(<div className={'work-area'}>Work Area</div>)
     }
 }
 
-export default  DropTarget('foo', {}, collect)(WorkArea);
+export default  DropTarget('dropArea', {}, collect)(WorkArea);
