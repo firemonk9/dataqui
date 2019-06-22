@@ -13,16 +13,12 @@ class ComponentToolKit extends PureComponent {
     }
 
     search(str) {
-        debugger
         let list;
         if(str.length < 3 && this.state.list.length < components.length) {
             this.setState({list: components});
-            return;
         } else if(str.length >= 3) {
-            str = str.toLowerCase()
-            list = filter(components, (item) => {
-                return item.label.toLowerCase().indexOf(str) !== -1
-            })
+            str = str.toLowerCase();
+            list = filter(components, item => item.label.toLowerCase().indexOf(str) !== -1);
             this.setState({ list })
         }
     }
