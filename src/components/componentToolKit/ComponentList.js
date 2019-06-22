@@ -3,9 +3,6 @@ import map from 'lodash/map';
 import { Icon } from 'antd';
 
 class ComponentList extends PureComponent {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         const content = map(this.props.list, item => {
