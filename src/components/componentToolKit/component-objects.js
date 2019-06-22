@@ -13,8 +13,6 @@ export default [
         id: 'dataCompare',
         path: 'svgPath',
         label: 'Data Compare'
-
-
     },
     {
         id: 'command',

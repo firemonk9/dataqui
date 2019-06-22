@@ -1,7 +1,10 @@
+import HTML5Backend from 'react-dnd-html5-backend';
+import { DragDropContext } from 'react-dnd';
 import ComponentToolKit from '../../components/componentToolKit/ComponentToolKit';
 import React from 'react';
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
-const { Header, Content, Footer, Sider } = Layout;
+import { Layout } from 'antd';
+const { Content, Sider } = Layout;
+
 class Flows extends React.Component {
 
     render() {
@@ -22,4 +25,4 @@ class Flows extends React.Component {
     }
 }
 
-export default Flows;
+export default DragDropContext(HTML5Backend)(Flows);
