@@ -6,7 +6,7 @@ import Executions from './containers/Executions/Executions.container';
 import Flows from './containers/Flows/Flows.container';
 import Users from './containers/Users/Users.container';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import './App.css';
+import './styles/App.scss';
 const { Content, Footer } = Layout;
 
 class App extends React.Component {
