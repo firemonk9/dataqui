@@ -26,7 +26,7 @@ class DraggableComponent extends React.Component {
         const { isDragging, connectDragSource, item} = this.props;
         return connectDragSource(<div className='drag-component-wrapper' key={item.id}>
             <Icon type="file" style={{ fontSize: '100px', color: '#08c', width: '50%' }}/>
-            <span style={{ color: '#08c', width: '50%' }} className={'component-id'}>{item.label}</span>
+            <p style={{ color: '#08c', width: '50%' }} className={'component-name'}>{item.label}</p>
         </div>)
     }
 }

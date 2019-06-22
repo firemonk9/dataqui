@@ -14,7 +14,7 @@ class ComponentList extends PureComponent {
             key={item.id}
             item={item}
         handleDrop = {(id) => this.handleDrop(id)}/>);
-        return <div>
+        return <div className={'drag-components-wrapper'}>
             {content}
         </div>
     }

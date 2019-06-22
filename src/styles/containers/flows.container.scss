@@ -1,0 +1,10 @@
+.drag-components-wrapper {
+  .drag-component-wrapper {
+    width: 50%;
+    float: left;
+    padding: 5px;
+    .component-name {
+      text-align: center;
+    }
+  }
+}
